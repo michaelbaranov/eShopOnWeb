@@ -19,7 +19,7 @@ public class SetQuantities
     public SetQuantities()
     {
         var dbOptions = new DbContextOptionsBuilder<CatalogContext>()
-            .UseInMemoryDatabase(databaseName: "TestCatalog")
+            .UseInMemoryDatabase(databaseName: "TestCatalog_SetQuantities")
             .Options;
         _catalogContext = new CatalogContext(dbOptions);
         _basketRepository = new EfRepository<Basket>(_catalogContext);
