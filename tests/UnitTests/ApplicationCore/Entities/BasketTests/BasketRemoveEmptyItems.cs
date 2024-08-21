@@ -18,4 +18,14 @@ public class BasketRemoveEmptyItems
 
         Assert.Equal(0, basket.Items.Count);
     }
+
+    [Fact]
+    public void DoesNotRemovesNonEmptyBasketItems()
+    {
+        var basket = new Basket("testBuyerId");
+        basket.AddItem(1, 10m, 1);
+        basket.RemoveEmptyItems();
+
+        Assert.Single(basket.Items);
+    }
 }
