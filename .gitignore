@@ -266,3 +266,6 @@ pub/
 
 # Others
 .promptLib/
+
+# Test Coverage 
+*/CoverageReport/**
