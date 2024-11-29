@@ -259,4 +259,10 @@ pub/
 .eshopdocker_*
 .devcontainer
 
-.azure
+.azurev
+
+# VS Code settings
+.vscode/settings.json
+
+# Others
+.promptLib/
